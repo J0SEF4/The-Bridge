@@ -1,4 +1,3 @@
-stylegan2-ada-josefa/
-*.csvfrgc cluster/frgc_face_embeddings.csv
-frgc cluster/frgc_face_embeddings.csv
-*.csv
+experiments/frgc cluster/frgc_face_embeddings.csv
+**/frgc_face_embeddings.csv
+*.mp4
