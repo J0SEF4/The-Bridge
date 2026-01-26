@@ -82,7 +82,7 @@ project/
 
 ## Files Not Included in Repository
 
-Due to file size limitations, the following data files are NOT included in the repository:
+Due to file size limitations, the following data files are NOT included in the repository. But they are saved here: https://drive.google.com/drive/folders/1FflEJ7RteaaUuj1Mp5bczcTsXdSb86dy?usp=sharing.
 
 ### 1. FRGC Face Embeddings
 **File**: `experiments/frgc cluster/frgc_face_embeddings.csv`
