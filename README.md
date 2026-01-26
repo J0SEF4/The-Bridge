@@ -32,14 +32,15 @@ project/
 │   ├── train.py                # Training script
 │   ├── generate.py             # Image generation
 │   ├── projector.py            # Latent space projection
-│   ├── dataset_tool.py         # Dataset preparation
-│   ├── illumination/           # Input images for projection experiments
-│   ├── illumination2/          # Additional input images for projections
-│   ├── out_proj/               # Projection results (experiment 1)
-│   ├── out_proj_2/             # Projection results (experiment 2)
-│   ├── out_proj_obama/         # Obama-specific projections
-│   ├── out_render/             # Images generated from NVIDIA's StyleGAN model
+│   ├── illumination/           # Input images for projections - Obama, different illumination in face
+│   ├── illumination2/          # Input images for projections - Man, same illumination in all image
+│   ├── out_proj/               # Projection results (out/ imgs)
+│   ├── out_proj_2/             # Projection results (illumination2/ imgs)
+│   ├── out_proj_obama/         # Projection results (illumination/ imgs)
+│   ├── out_render/             # Images generated from NVIDIA's StyleGAN model from out_proj_2/
 |   └── others...
+│
+├── PPT weekly/                 # PPT documentation from every week
 │
 └── experiments/                          # Experimental notebooks
     ├── 1_target-proj-render.ipynb        # Projection vs rendering analysis
@@ -135,7 +136,7 @@ cd stylegan2-ada-josefa
 ## Resources and References
 
 - **Official Repository**: [NVlabs/stylegan2-ada-pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch)
-- **FRGC Dataset**: Face Recognition Grand Challenge - Face dataset for research
+- **FRGC Dataset**: Face Recognition Grand Challenge - Face dataset from University of Notre Dame
 - **LFW Dataset**: Labeled Faces in the Wild - Face dataset in natural conditions
 
 ## Development Notes
