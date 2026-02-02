@@ -1,14 +1,11 @@
 #Manifold-Manifold Distance Code (Paper: "Manifold–Manifold Distance and Its Application to Face Recognition With Image Sets", Wang et al. 2012))
 
 #SETUP
-import os
 import numpy as np
-import pandas as pd
 from typing import List, Tuple
 
 from sklearn.neighbors import NearestNeighbors
 from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
 from sklearn.metrics import pairwise_distances
 
 from scipy.sparse import csr_matrix
