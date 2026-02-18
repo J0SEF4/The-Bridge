@@ -42,11 +42,16 @@ project/
 │
 ├── PPT weekly/                 # PPT documentation from every week
 │
+├── papers/                     # papers that I have used
+│
 └── experiments/                          # Experimental notebooks
     ├── 1_target-proj-render.ipynb        # Projection vs rendering analysis
     ├── frgc cluster/                     # FRGC dataset clustering
     ├── lfw clusters/                     # LFW dataset clustering
     └── illumination/                     # Illumination experiments from projection and StyleGAN
+    ├── mmd distances/                    # Manifold distances and MMD analysis
+    ├── dim estimation/                   # Intrinsic dimension estimation
+    └── angles/                           # Angular analysis of representations
 ```
 
 ## Experiments Performed
@@ -147,6 +152,42 @@ cd stylegan2-ada-josefa
 - Input images for projection experiments are stored in `illumination/` and `illumination2/` folders
 - Generated outputs from NVIDIA's StyleGAN model are stored in `out_render/`
 
+
+## experiments/ – Current Structure and Description (2026)
+
+The `experiments/` folder contains notebooks and scripts for facial recognition analysis, projection, clustering, intrinsic dimensionality estimation, and illumination experiments. Below is the updated content:
+
+### Main Notebooks and Folders
+
+- **1_target-proj-render.ipynb**  
+  Comparative analysis between target images, their projections in the StyleGAN2 latent space, and generated renderings.
+
+- **angles/**  
+  - `7_angular_angles_Linear.ipynb`: Analysis of angles between identity representations (linear method).
+  - `7_angular_angles_NoLinear.ipynb`: Analysis of angles using nonlinear methods.
+  - `deepmds_pipeline.py`: Pipeline for DeepMDS and geometric analysis.
+
+- **dim estimation/**  
+  - `6_dim_estimation.ipynb`, `6_dim_estimation_K-1.ipynb`, `6_dim_estimation_K-1_tolerance.ipynb`, `6_dim_estimation_filter20.ipynb`: Notebooks for intrinsic dimensionality estimation of identities, with different filters and tolerances.
+  - `comparing.ipynb`: Visual comparison of dimension estimation results.
+  - `dimestimation_pipeline.py`: Script for the estimation pipeline.
+  - Folders `all imgs/`, `filter20 imgs/`, `K-1 imgs/`, `K-1 tolerance imgs/`: Summary images and results for each filter.
+
+- **frgc cluster/**  
+  - `4_clusters_all.ipynb`, `4_clusters_filter.ipynb`: Identity clustering in the FRGC dataset.
+  - `frgc_face_embeddings.csv`: Face embeddings generated with ArcFace.
+
+- **illumination/**  
+  - `2_experiment_illumination.ipynb`, `2_experiment_illumination2.ipynb`: Experiments on the effect of illumination on projections and representations.
+
+- **lfw clusters/**  
+  - `3_clusters_all.ipynb`, `3_clusters_5_10.ipynb`, `3_clusters_10_15.ipynb`, `3_clusters_10_25.ipynb`: Identity clustering in the LFW dataset with different filters for the number of images per identity.
+
+- **mmd distances/**  
+  - `5_clusters_mmd.ipynb`: Calculation of distances between identity manifolds using MMD.
+  - `mmd_pipeline.py`: Functions for distance calculation and manifold analysis.
+
 ## License
 
 This project uses NVIDIA's StyleGAN2-ADA, which is subject to NVIDIA's license. See `stylegan2-ada-josefa/LICENSE.txt` for details.
+
