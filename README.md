@@ -3,6 +3,12 @@
 This project contains experiments and analysis related to:
 - StyleGAN2-ADA, focusing on face projection to latent space, synthetic image generation and illumination attribute direction.
 - Facial clustering analysis, using FRGC and LFW dataset.
+## Papers
+1. DREAMS: Preserving both Local and Global Structure in Dimensionality Reduction (Noël Kury, et al.)
+2. On the Intrinsic Dimensionality of Image Representations (Sixue Gong, Vishnu Naresh Boddeti, Anil K. Jain)
+3. Manifold-Manifold Distance with Application to Face Recognition based on Image Set (Ruiping Wang, Shiguang Shan, Xilin Chen, Wen Gao)
+4. A Global Geometric Framework for Nonlinear Dimensionality Reduction (Joshua B. Tenenbaum, Vin de Silva, John C. Langford)
+5. Nonlinear Dimensionality Reduction by Locally Linear Embedding (Sam T. Roweis and Lawrence K. Saul), The Isomap Algorithm and Topological Stability
 
 ## Overview
 
